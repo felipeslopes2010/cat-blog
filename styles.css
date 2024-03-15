@@ -11,7 +11,9 @@ input {
 }
 
 body {
-    max-width: 430px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -46,11 +48,13 @@ header {
     color: #fff;
 }
 
-.title {
-    margin-left: 2.2rem;
+.main-picture img {
+    width: 100%;
+    border-radius: 6px;
 }
 
-.title h1 {
+.title {
+    margin-left: 2.2rem;
     margin-top: 3rem;
 }
 
@@ -122,4 +126,45 @@ footer p{
     font-size: 1.6rem;
     text-align: center;
     color: #fff;
+}
+
+@media(min-width: 1000px) {
+
+    body {
+        width: 100%;
+        grid-template-rows: 1fr;
+    }
+
+    .user-input-container input {
+        width: 1080px;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem 0rem 4rem 25rem;
+        gap: 15rem;
+    }
+
+    .first-container {
+        width: 805px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+
+    .main-text {
+        margin-left: 0;
+    }
+
+    .main-picture img {
+        width: 800px;
+        height: 405px;
+    }
+
+
 }
