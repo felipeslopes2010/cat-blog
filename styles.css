@@ -51,6 +51,7 @@ header {
 .main-picture img {
     width: 100%;
     border-radius: 6px;
+    padding: 2rem 2.2rem;
 }
 
 .title {
@@ -164,6 +165,7 @@ footer p{
     .main-picture img {
         width: 800px;
         height: 405px;
+        padding: 2.2rem 0rem;
     }
 
 
