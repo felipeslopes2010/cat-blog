@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root,
+input {
+    font-size: 62.5%;
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    max-width: 430px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #065E7C;
+    padding: 1.6rem 2.8rem;
+    gap: 2.6rem;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+}
+
+.user-input-container input{
+    width: 240px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px 12px 14px;
+    border: none;
+    outline: none;
+}
+
+
+.user-input-container input,
+.user-input-container input::placeholder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.title {
+    margin-left: 2.2rem;
+}
+
+.title h1 {
+    margin-top: 3rem;
+}
+
+.user-feedback-container {
+    display: flex;
+    margin-top: .8rem;
+    gap: 1.2rem;
+}
+
+.main-text {
+    margin-left: 2.2rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 160%;
+    color: #121214;
+}
+
+aside {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 2.2rem;
+}
+
+aside h2 {
+    font-size: 2.4rem;
+    color: #202024; 
+}
+
+article {
+    margin-top: 3.2rem;
+}
+
+figure {
+    display: flex;
+    margin-bottom: 3.2rem;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+figure img {
+    height: 84px;
+    width: 150px;
+}
+
+figcaption {
+    width: 215px;
+}
+
+figcaption h3{
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: #202024;
+}
+
+figcaption p {
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: #121214; 
+}
+
+footer {
+    background-color: #387E96;
+    padding: 1.6rem;
+}
+
+footer p{
+    padding: 2.65rem 1.6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
