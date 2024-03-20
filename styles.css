@@ -52,6 +52,8 @@ header {
     width: 100%;
     border-radius: 6px;
     padding: 2rem 2.2rem;
+    --delay: 0.2s;
+    animation: appear .4s var(--delay) backwards;
 }
 
 .title {
@@ -91,13 +93,29 @@ article {
 figure {
     display: flex;
     margin-bottom: 3.2rem;
+    padding: 0 1rem;
     gap: 1.6rem;
     align-items: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
+figure:hover {
+    background-color: #F9F9F9;
+    border-radius: 4px;
+    animation: zoom 1s forwards, appear;
 }
 
 figure img {
     height: 84px;
     width: 150px;
+ 
+    transition: all 200ms ease-out;
+}
+
+figure:hover img {
+    filter: hue-rotate(7deg) contrast(101%) saturate(100%);
+    transform: scale(1.05);
 }
 
 figcaption {
@@ -118,7 +136,7 @@ figcaption p {
 
 footer {
     background-color: #387E96;
-    padding: 1.6rem;
+    
 }
 
 footer p{
@@ -127,6 +145,57 @@ footer p{
     font-size: 1.6rem;
     text-align: center;
     color: #fff;
+}
+
+header {
+    animation: move .2s
+}
+
+.logo,
+.profile-picture, 
+.user-feedback-container img {
+    cursor: pointer;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-100%);
+    }
+}
+
+figure {
+    animation: appear .4s var(--delay) backwards;
+}
+
+.seccond-container {
+    animation: appearContainer .4s var(--delay) backwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes appearContainer {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 @media(min-width: 1000px) {
